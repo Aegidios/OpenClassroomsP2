@@ -1,0 +1,240 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 115px;
+    position: relative;
+    top: 20px;
+    left: -5px;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+nav{
+    align-items: center;
+    height: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0;
+}
+
+nav ul li{
+    margin: 0;
+    padding: 35px;
+    color: black;
+}
+
+nav ul li:hover{
+    border-top: 2px solid #0065fc;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+nav ul li a:hover{
+    color: #0065fc;
+}
+
+#search_box div:first-child div:first-child p{
+    font-size: 0.95em;
+    margin-top: 8px;
+}
+
+#search{
+    display: flex;
+    border: 0 solid black;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#search i{
+    height: 40px;
+    padding: 15px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+}
+
+#search input[type="search"]{
+    font-weight: bold;
+    border: 1px solid #f2f2f2;
+    padding-left: 15px;
+}
+
+#search input[type="submit"]{
+    color: white;
+    background-color: #0065fc;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+    padding: 0 15px;
+    border: 1px solid #f2f2f2;;
+}
+
+#search_button{
+    display: none;
+}
+
+#search_button i {
+    background-color: #0065fc;
+    border-radius: 10px;
+}
+
+#search_responsive{
+    display: none;
+    border: 0 solid black;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.fa-location-dot{
+    height: 40px;
+    padding: 15px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+}
+
+/* #search_responsive input[type="search"]{
+    font-weight: bold;
+    border: 1px solid #f2f2f2;
+    padding-left: 15px;
+} */
+
+#search_button{
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+}
+
+.fa-magnifying-glass{
+    color: white;
+    background-color: #0065fc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 15px;
+}
+
+@media (max-width:768px){
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .logo{
+        text-align: center;
+        margin: auto;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    nav ul li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 2px solid #f2f2f2;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    nav ul li:hover{
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+    }
+
+    nav ul li a{
+        color: black;
+    }
+
+    #search_box{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #search_box div:first-child div:first-child h3{
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    #search_box div:first-child div:first-child p{
+        font-size: 0.9em;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+    #search input[type="search"]{
+        padding-left: 30px;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #search input[type="submit"] {
+        display: none;
+    }
+
+    #search_button{
+        display: flex;
+        border-radius: 20px;
+        width: 70px;
+    }
+
+    #search i{
+        height: 65px;
+        width: 85px;
+        font-size: 1.4em;
+        border-radius: 17px 0 0 17px;
+    }
+
+    #search_button i{
+        border-radius: 20px;
+    }
+    
+}
+
+@media (min-width:768px){
+
+    #search{
+        font-size: 1.15em;
+    }
+
+    #search i{
+        height: 45px;
+    }
+
+    #search input[type="search"]{
+        font-size: 0.9em;
+    }
+
+    #search input[type="submit"]{
+        font-size: 0.85em;
+    }
+
+}

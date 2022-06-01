@@ -1,0 +1,22 @@
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.activitesamarseille{
+    background-color: white;
+}
+
+@media (max-width:768px){
+
+    .main{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+}
